@@ -1,0 +1,47 @@
+{
+    "name": {
+        "id": 1008600000,
+        "internal": "QualityControl",
+        "external": "QualityControl"
+    },
+    "category": "Tools",
+    "version": "1.0.0",
+    "requirements": {
+        "phpOMS": "1.0.0",
+        "phpOMS-db": "1.0.0"
+    },
+    "creator": {
+        "name": "Jingga",
+        "website": "jingga.app"
+    },
+    "description": "The administration module.",
+    "directory": "QualityControl",
+    "dependencies": {
+        "Admin": "1.0.0",
+        "Tasks": "1.0.0",
+        "Tools": "1.0.0"
+    },
+    "providing": {
+        "Navigation": "*"
+    },
+    "load": [
+        {
+            "pid": [
+                "/qualitymanagement/qualitycontrol"
+            ],
+            "type": 4,
+            "for": "Content",
+            "file": "QualityControl",
+            "from": "QualityControl"
+        },
+        {
+            "pid": [
+                "/"
+            ],
+            "type": 5,
+            "from": "QualityControl",
+            "for": "Navigation",
+            "file": "Navigation"
+        }
+    ]
+}

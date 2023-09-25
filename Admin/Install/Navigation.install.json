@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1008601001,
+        "pid": "/",
+        "type": 2,
+        "subtype": 1,
+        "name": "QualityControl",
+        "uri": "{/base}/qualitymanagement/qualitycontrol/list",
+        "target": "self",
+        "icon": null,
+        "order": 65,
+        "from": "QualityControl",
+        "permission": { "permission": 2, "category": null, "element": null },
+        "parent": 1008501001,
+        "children": [
+            {
+                "id": 1008602001,
+                "pid": "/qualitymanagement/qualitycontrol",
+                "type": 3,
+                "subtype": 1,
+                "name": "List",
+                "uri": "{/base}/qualitymanagement/qualitycontrol/list",
+                "target": "self",
+                "icon": null,
+                "order": 1,
+                "from": "QualityControl",
+                "permission": { "permission": 2, "category": null, "element": null },
+                "parent": 1008601001,
+                "children": []
+            }
+        ]
+    }
+]
